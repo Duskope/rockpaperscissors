@@ -22,7 +22,7 @@ document.getElementById('scissors').addEventListener('click', (e) => {
 })
 
 function genCompChoice() {
-    let num = Math.floor(Math.random() * 3) + 1
+    let num = Math.floor(Math.random() * 3)
 
     if (num === 1) {
         compChoice = 'rock'
