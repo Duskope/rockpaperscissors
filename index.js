@@ -31,7 +31,7 @@ function genCompChoice() {
         compChoice = 'paper'
     }
     if ( num === 2) {
-        compChoice === 'scissors'
+        compChoice = 'scissors'
     }
 }
 function getResult() {
