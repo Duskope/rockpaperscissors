@@ -1,0 +1,65 @@
+@font-face {
+    font-family: blackjack;
+    src: url(/rockpaperscissors/font/blackjack/blackjack.otf);
+}
+
+body {
+    display:flex;
+    flex-direction: column;
+    font-family: blackjack;
+    background-color: #3B3D3C;
+    color: #26B198;
+    height: 100vh;
+}
+.maingrid {
+    width: 100%;
+    display: flex;
+}
+#title {
+    justify-content: center;
+    margin-top: 50px;
+    font-size: 40px;
+}
+#desc{
+    justify-content: center;
+    font-size: 30px;
+}
+#weaponsgrid {
+    justify-content: center;
+}
+.weaponimg {
+    height: 240px;
+    margin: 20px;
+    border: 4px;
+    border-color: #27C39A;
+    border-style: solid;
+    border-radius: 5px;
+}
+.weapons {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 350px;
+}
+.weaponlabel {
+    align-self: center;
+    font-size: 30px;
+    font-weight: 500;
+    margin: 0;
+}
+.weapons:hover {
+    transform: scale(1.1);
+}
+#footer {
+    justify-content:center;
+    align-content: flex-end;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+    margin-top: 470px;
+}
+#resultDisplay {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 50px;
+}
