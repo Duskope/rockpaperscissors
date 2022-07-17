@@ -24,13 +24,13 @@ document.getElementById('scissors').addEventListener('click', (e) => {
 function genCompChoice() {
     let num = Math.floor(Math.random() * 3)
 
-    if (num === 1) {
+    if (num === 0) {
         compChoice = 'rock'
     }
-    if (num === 2) {
+    if (num === 1) {
         compChoice = 'paper'
     }
-    if ( num === 3) {
+    if ( num === 2) {
         compChoice === 'scissors'
     }
 }
