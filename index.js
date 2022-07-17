@@ -22,16 +22,16 @@ document.getElementById('scissors').addEventListener('click', (e) => {
 })
 
 function genCompChoice() {
-    let num = Math.floor(Math.random() * 3) + 1
+    let num = Math.floor(Math.random() * 3)
 
-    if (num === 1) {
+    if (num === 0) {
         compChoice = 'rock'
     }
-    if (num === 2) {
+    if (num === 1) {
         compChoice = 'paper'
     }
-    if ( num === 3) {
-        compChoice === 'scissors'
+    if ( num === 2) {
+        compChoice = 'scissors'
     }
 }
 function getResult() {
@@ -45,7 +45,7 @@ function getResult() {
         result = 'Rock beats scissors. You win.'
     }
     if (userChoice === 'paper' && compChoice === 'rock') {
-        result === 'Paper beats rock. You win.'
+        result = 'Paper beats rock. You win.'
     }
     if (userChoice === 'paper' && compChoice === 'scissors') {
         result = 'Scissors beats paper patrick. You lost nerd.'
@@ -56,5 +56,6 @@ function getResult() {
     if (userChoice === 'scissors' && compChoice === 'paper') {
         result = 'Scissors beats paper. You win.'
     }
+   
     resultDisplay.innerHTML = result
 }
